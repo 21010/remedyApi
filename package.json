@@ -1,0 +1,32 @@
+{
+  "name": "remedy",
+  "version": "1.0.0",
+  "description": "Remedy DB API",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon src/server.js --standalone --exec babel-node --presets env",
+    "build": "babel src -d dist --presets env",
+    "serve": "node dist/server.js --standalone",
+    "install": "node dist/server.js --add"
+  },
+  "author": "Grzegorz Ziolo",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "helmet": "^3.13.0",
+    "mssql": "^4.1.0",
+    "os-service": "^2.1.3",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "ajv": "^6.5.4",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.5.0",
+    "eslint-config-google": "^0.10.0",
+    "nodemon": "^1.18.4"
+  }
+}
